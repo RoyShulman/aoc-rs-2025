@@ -4,6 +4,7 @@ use std::io::{Read, stdin};
 
 mod day1;
 mod day2;
+mod day3;
 
 fn read_from_stdin() -> String {
     let mut buffer = String::new();
@@ -13,6 +14,6 @@ fn read_from_stdin() -> String {
 
 fn main() {
     let input = read_from_stdin();
-    let result = day2::part2(input.trim()).unwrap();
+    let result = day3::part2(input.trim()).unwrap();
     println!("{}", result);
 }
