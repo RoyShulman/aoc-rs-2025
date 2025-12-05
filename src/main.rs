@@ -1,6 +1,9 @@
+// allow because most of the days aren't ran
+#![allow(dead_code)]
 use std::io::{Read, stdin};
 
 mod day1;
+mod day2;
 
 fn read_from_stdin() -> String {
     let mut buffer = String::new();
@@ -10,6 +13,6 @@ fn read_from_stdin() -> String {
 
 fn main() {
     let input = read_from_stdin();
-    let result = day1::part2(&input).unwrap();
+    let result = day2::part2(input.trim()).unwrap();
     println!("{}", result);
 }
