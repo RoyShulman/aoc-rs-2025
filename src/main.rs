@@ -7,6 +7,7 @@ mod day2;
 mod day3;
 mod day4;
 mod day5;
+mod day6;
 
 fn read_from_stdin() -> String {
     let mut buffer = String::new();
@@ -16,6 +17,6 @@ fn read_from_stdin() -> String {
 
 fn main() {
     let input = read_from_stdin();
-    let result = day5::part2(input.trim()).unwrap();
+    let result = day6::part2(input.trim()).unwrap();
     println!("{}", result);
 }
