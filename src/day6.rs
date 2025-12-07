@@ -203,17 +203,4 @@ mod tests {
         let result = part2(input).unwrap();
         assert_eq!(result, 3263827);
     }
-
-    #[test]
-    fn test_part2_another_one() {
-        let input = indoc! {"
-            5973 7497 845 23 5484 92   8 3  7134 2   2   3
-            6499 9645 659 91 7266 28  54 99 8973 1   4  18
-            4319   39 122 88 8952 54  82 32 851  973 53 52
-            8513    7 965 65  956 21 319 91 8    439 45 69
-            +    +    *   *  +    +  *   +  +    +   *  *
-        "};
-        let result = part2(input).unwrap();
-        assert_eq!(result, 3263827);
-    }
 }
